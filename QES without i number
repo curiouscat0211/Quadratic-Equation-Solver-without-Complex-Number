@@ -1,0 +1,26 @@
+#include <iostream> 
+#include <complex.h>
+#include <math.h>
+#include <cmath>
+#include <cstdio>
+int main()
+{
+	double a{ };
+	double b{ };
+	double c{ };
+	std::cout << "a:";
+	std::cin >> a;
+	std::cout << "b:";
+	std::cin >> b;
+	std::cout << "c:";
+	std::cin >> c;
+	double y{ -(b)+sqrt(b * b - 4 * a * c) };
+	double z{ -(b)-sqrt(b * b - 4 * a * c) };
+	std::cout << "X1 = ";
+	std::cout << y / 2 * a << std::endl;
+	std::cout << "X2 = ";
+	std::cout << z / 2 * a;
+	std::getchar();
+	std::cout << std::endl;
+	system("pause");
+}
